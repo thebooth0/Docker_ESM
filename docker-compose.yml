@@ -6,6 +6,8 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: ESM-container
+    ports:
+      - "8080:80"
     tty: true
     volumes:
       - .:/app
