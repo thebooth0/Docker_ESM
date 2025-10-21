@@ -8,6 +8,8 @@ services:
     container_name: ESM-container
     ports:
       - "8080:80"
+    volumes:
+      - ./www:/var/www/html
     tty: true
     volumes:
       - .:/app
