@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  ESM:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ESM-container
+    tty: true
+    volumes:
+      - .:/app
